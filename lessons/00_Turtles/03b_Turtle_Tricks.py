@@ -17,6 +17,21 @@ tina = turtle.Turtle()                  # Create a turtle named tina
 # Make each side of the pentagon a different color with 
 # tina.pencolor()
 
+tina.pencolor('blue')
+tina.forward(100)
+tina.left(120)
+tina.pencolor('green')
+tina.forward(100)
+tina.left(120)
+tina.pencolor('red')
+tina.forward(100)
+tina.left(120)
+tina.pencolor('purple')
+tina.forward(100)
+tina.left(120)
+tina.pencolor('orange')
+tina.forward(100)
+tina.left(120)
 
 ... # Your code here
 
