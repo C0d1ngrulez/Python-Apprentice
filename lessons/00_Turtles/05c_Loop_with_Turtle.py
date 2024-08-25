@@ -16,6 +16,6 @@ tina.shape('turtle')
 tina.speed(2)      
 for i in range (5):
     tina.forward(100)                      
-    tina.left(150)   
+    tina.left(72)   
 
 turtle.exitonclick()   
