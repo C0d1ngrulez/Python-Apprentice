@@ -25,19 +25,16 @@ def set_turtle_image(turtle, image_name):
 
 # Set up the screen
 screen = turtle.Screen()
-screen.setup(width=600, height=600)
+screen.setup(width=600, height=400)
 
 # Create a turtle and set its shape to the custom GIF
 t = turtle.Turtle()
-
-set_turtle_image(t, "leaguebot_bolt.gif")
-
-t.penup()
+set_turtle_image(t,"pikachu.gif")
+t.color('blue')
+t.pencolor()
 t.speed(3)
 
-for i in range(4):
-    t.goto(200, 200)
-    t.goto(-200, -200)
-
-
+for i in range(8):
+    t.forward(50)
+    t.right(360/6)
 turtle.exitonclick()    
