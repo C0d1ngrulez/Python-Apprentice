@@ -7,18 +7,15 @@ so the moustache will twirl when you click on it.
 Hint: See 08a_More Turtle Programs, section 'Click on the Turtle'
 """
 
-... # Your code here
-
-import turtle as turtle
-
+import turtle as turtle 
 screen = turtle.Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor('white')
 
-t = turtle.Turtle()
+t = turtle.Turtle(visible=False)
+t.hideturtle()
 t.penup()
 t.shape("turtle")
-
 def screen_clicked(x, y):
     """Print the x and y coordinates of the screen when clicked.
     and make the turtle move to the clicked location."""
@@ -44,7 +41,8 @@ def set_background_image(window, image_name):
 
 import turtle                           
 turtle.setup(width=600, height=600)   
-tina = turtle.Turtle()                  
+tina = turtle.Turtle()            
+tina.hideturtle()
 screen = turtle.Screen()               
 set_background_image(screen, "emoji.png") 
 
@@ -63,7 +61,6 @@ screen = turtle.Screen()
 screen.setup(width=600, height=600)
 
 t = turtle.Turtle()
-
 set_turtle_image(t, "moustache1.gif")
 
 t.penup()
@@ -76,10 +73,9 @@ import turtle as turtle
 turtle.setup(width=600, height=600)
 
 t = turtle.Turtle()
-
+t.hideturtle()
 t.shape("turtle")
 t.turtlesize(stretch_wid=10, stretch_len=10, outline=4) # Make the turtle really big
-
 def turtle_clicked(t, x, y):
     """Function that gets called when the user clicks on the turtle
 
@@ -111,10 +107,10 @@ screen.setup(width=600, height=600)
 screen.bgcolor('white')
 
 t = turtle.Turtle()
+t.hideturtle()
 t.penup()
 t.shape("turtle")
 t.turtlesize(stretch_wid=10, stretch_len=10, outline=4)
-
 def turtle_clicked(t, x, y):
 
     print('turtle clicked!')
