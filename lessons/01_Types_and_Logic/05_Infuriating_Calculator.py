@@ -38,3 +38,34 @@ you can ask for a string with simpledialog.askstring().
 # If the user enters an unknown operation, display an error message. ( use messagebox.showerror()
 
 # Keep the window open
+
+from tkinter import messagebox, simpledialog, Tk
+
+window = Tk()     
+window.withdraw()
+
+firstnumber =  simpledialog.askfloat("Your first number", "What is your first number?")
+secondnumber = simpledialog.askfloat("Your second number", "What is your second number?")
+operation = simpledialog.askstring("Your operation", "Enter multiplication,division, subtraction, or addition")
+
+answer = ""
+if operation == "multiplication":
+   answer = str(firstnumber*secondnumber)
+
+   messagebox.showinfo("Answer:", answer)
+   if operation == "division":
+      answer = str(firstnumber/secondnumber)
+
+      messagebox.showinfo("Answer:", answer)
+
+      if operation == "subtraction":
+         answer = str(firstnumber-secondnumber)
+
+         messagebox.showinfo("Answer:", answer)
+
+         if operation == "adddition":
+            answer = str(firstnumber+secondnumber)
+
+            messagebox.showinfo("Answer:", answer)
+else:
+   messagebox.showerror("Error", "Unknown Operation")           

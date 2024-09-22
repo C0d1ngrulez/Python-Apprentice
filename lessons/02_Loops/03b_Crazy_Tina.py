@@ -28,9 +28,9 @@ colors = [  ... ]
 
 for  i in range(8):
 
-    forward = ...
-    left = ...
-    color = ...
+    forward = 100
+    left = 45
+    color = "blue"
 
 
     tina.color(color)

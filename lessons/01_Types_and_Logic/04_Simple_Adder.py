@@ -23,3 +23,13 @@ at the comments and the code snippets in the previous lessons, like
 
 # Keep the window open
 
+from tkinter import messagebox, simpledialog, Tk
+
+window = Tk()     
+window.withdraw()
+
+firstnumber =  simpledialog.askfloat("Your first number", "What is your first number?")
+secondnumber = simpledialog.askfloat("Your second number", "What is your second number?")
+
+answer = firstnumber+secondnumber
+messagebox.showinfo("Answer:", answer)
