@@ -36,8 +36,9 @@ app = App("Numbers Grid", layout="grid")
 for x in range(10):
     for i in range(10):
         print(x,i)
+        Text(app, text='🦡', grid=[x, i], color="blue")
 # In the loop, calculate or increment the number
-
+ 
 # Use % determing the display, using fizzbuzz rules
 
 # If you are displaying a number, calculate the sum of the digits and determine the color

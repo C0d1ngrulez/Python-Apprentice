@@ -42,15 +42,18 @@ def ask_integer(prompt):
 
 
 # Pick the random number
-
+random=57                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 # In your loop:
-
+guessed=False
+n = random.randint(1, 100)
     # Get the user's guess
-
+while not guessed:
+    guess=input("guess a number")
+    guess=int(guess)
+    if guess == 57:
+        guess=True
     # If the user's guess is divisible by 7, tell the user to start over
 
     # If the user's guess is too high, tell the user
     # If the user's guess is too low, tell the user
     # If the user's guess is correct, tell the user and break out of the loop
-
-
